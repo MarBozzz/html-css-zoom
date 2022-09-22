@@ -13,10 +13,9 @@
 .container-2 {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
 }
-
 
 body {
   background-color: #222222;
@@ -24,9 +23,9 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   font-size: 12px;
-
 }
 
+/*header*/
 header {
   height: 70px;
   background-color: blanchedalmond;
@@ -42,25 +41,17 @@ header {
 
 .header-menu ul {
   list-style: none;
-  /*position: relative;*/
 }
 
 .header-menu ul li {
   display:inline-block;
-  /*position: absolute;*/
-  /*top: 0;
-  right: 0;*/
-  margin: 10px;
 }
-
 
 .header-menu ul li a {
   color: #FFFFFF;
   text-decoration: none;
-  margin: 10px;
   display: inline-block;
 }
-
 
 .menu-container {
   height: 24px;
@@ -69,7 +60,7 @@ header {
   padding: 5px;
 }
 
-
+/*main*/
 main {
   height: calc(100vh - 150px);
   width: 98%;
@@ -78,12 +69,11 @@ main {
   overflow: scroll;
 }
 
-
 .box-repeat {
   position: relative;
   height: 140px;
   width: 240px;
-  margin: 2px;
+  margin: 5px 2px;
 }
 
 .box-repeat .user {
@@ -95,40 +85,35 @@ main {
   background-color: rgba(255, 255, 255, 0.185);
 }
 
+/*footer*/
 footer {
   height: 80px;
   background-color: #222222;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #999999;
 }
 
-
-.footer-left {
-  /*display: flex;
-  justify-content: space-between;
-  width: 200px;*/
-}
-
-.footer-left nav ul {
+.footer-left nav ul, .footer-center nav ul {
   display: flex;
   list-style: none;
 }
 
-.footer-left nav ul li {
-  flex-direction: column;
+.footer-left nav ul li, .footer-center nav ul li {
   margin-left: 10px;
-  padding-right: 18px;
+  padding-right: 5px;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .icon-text {
   text-align: center;
 }
 
-.footer-left i {
+.footer-left i, .footer-center i {
   font-size: 28px;
 }
 
@@ -142,4 +127,20 @@ footer {
 
 .icon-text i {
   display: block;
+}
+
+.active {
+  color: #2D7800;
+}
+
+.footer-right {
+  height: 100%;
+  background-color: #2C2C2C;
+  cursor: pointer;
+}
+
+.footer-right span {
+  color: #990017;
+  line-height: 80px;
+  padding: 0 20px;
 }
